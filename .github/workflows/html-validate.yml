@@ -1,0 +1,41 @@
+name: HTML Validate
+
+# Runs HTMLHint on all HTML files in the src/ folder.
+# This catches common HTML mistakes: missing alt text, broken tags,
+# duplicate IDs, missing doctype, and more.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/**"
+
+permissions:
+  contents: read
+
+jobs:
+  htmlhint:
+    name: HTMLHint Lint Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install HTMLHint
+        run: npm install -g htmlhint@1.1.4
+
+      - name: Run HTMLHint on src/
+        run: |
+          echo "Running HTMLHint on src/*.html..."
+          htmlhint "src/*.html" --config .htmlhintrc
+          echo "✓ HTML validation passed"

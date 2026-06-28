@@ -1,0 +1,56 @@
+name: PR Title Check
+
+# For intro PRs, enforces the exact title: "My First Open Source Contribution"
+# For all other PRs, enforces a basic conventional format.
+# This runs only when a PR is opened, edited, or synchronized.
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+    branches: [main]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  check-pr-title:
+    name: Validate PR Title
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check PR title format
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = context.payload.pull_request.title;
+            const body = context.payload.pull_request.body || '';
+
+            // Check if this is an intro PR (touches CONTRIBUTORS.md)
+            const isIntroPR = body.toLowerCase().includes('contributors.md') ||
+                              title.toLowerCase().includes('first open source') ||
+                              title === 'My First Open Source Contribution';
+
+            if (isIntroPR) {
+              // Strict title for intro PRs
+              if (title !== 'My First Open Source Contribution') {
+                core.setFailed(
+                  `Intro PR title must be exactly: "My First Open Source Contribution"\n` +
+                  `You used: "${title}"\n\n` +
+                  `Please edit your PR title to match exactly — capitalization matters!`
+                );
+              } else {
+                console.log('✓ Intro PR title is correct: "My First Open Source Contribution"');
+              }
+            } else {
+              // For all other PRs: must be non-empty and at least 10 chars
+              if (!title || title.trim().length < 10) {
+                core.setFailed(
+                  `PR title is too short or empty. Please write a clear, descriptive title.\n` +
+                  `Example: "Fix card layout on mobile screens"\n` +
+                  `Example: "Add hover effect to glossary cards"`
+                );
+              } else {
+                console.log(`✓ PR title looks good: "${title}"`);
+              }
+            }

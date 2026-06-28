@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beginner-friendly DevOps glossary covering essential terms from the CNCF ecosystem and cloud native world." />
+  <title>DevOps Glossary — Learn the Language of Cloud Native</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">&#9729;</span>
+        <span class="logo-text">DevOps Glossary</span>
+      </div>
+      <nav class="header-nav">
+        <a href="#glossary">Terms</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/Ayushmore1214/First_Pr_lab" target="_blank" rel="noopener" class="btn-github">
+          &#x2605; Star on GitHub
+        </a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">&#9790;</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-badge">Open Source Learning Lab</div>
+      <h1 class="hero-title">The DevOps Glossary</h1>
+      <p class="hero-subtitle">
+        Plain-English definitions for the terms you keep hearing in cloud native conversations.
+        No fluff, no jargon — just clear explanations for real beginners.
+      </p>
+      <div class="search-wrapper">
+        <span class="search-icon">&#128269;</span>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Search terms... e.g. Kubernetes, CI/CD, Docker"
+          aria-label="Search glossary terms"
+        />
+        <span class="search-count" id="search-count"></span>
+      </div>
+      <div class="hero-stats">
+        <span class="stat"><strong id="term-count">20</strong> terms covered</span>
+        <span class="stat-divider">·</span>
+        <span class="stat">Plain English definitions</span>
+        <span class="stat-divider">·</span>
+        <span class="stat">CNCF ecosystem focused</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <section class="filter-bar" id="glossary">
+    <div class="container">
+      <div class="filter-buttons" role="group" aria-label="Filter by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="core">Core Concepts</button>
+        <button class="filter-btn" data-filter="containers">Containers</button>
+        <button class="filter-btn" data-filter="kubernetes">Kubernetes</button>
+        <button class="filter-btn" data-filter="cicd">CI/CD</button>
+        <button class="filter-btn" data-filter="observability">Observability</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOSSARY GRID -->
+  <main class="glossary-section">
+    <div class="container">
+      <div class="glossary-grid" id="glossary-grid">
+
+        <!-- Core Concepts -->
+        <article class="term-card" data-category="core" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag core">Core Concepts</span>
+          </div>
+          <h2 class="card-term">DevOps</h2>
+          <p class="card-definition">
+            A culture and set of practices that brings software <em>development</em> (Dev) and IT <em>operations</em> (Ops) teams together. Instead of developers throwing code over a wall for operations to deploy, everyone works together throughout the entire software lifecycle — from planning to production.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Culture</span>
+            <span class="card-keyword">Collaboration</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="core" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag core">Core Concepts</span>
+          </div>
+          <h2 class="card-term">Cloud Native</h2>
+          <p class="card-definition">
+            An approach to building and running applications that takes full advantage of cloud computing. Cloud native apps are designed to be scalable, resilient, and manageable — typically built using containers, microservices, and automation from the ground up.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">CNCF</span>
+            <span class="card-keyword">Scalability</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="core" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag core">Core Concepts</span>
+          </div>
+          <h2 class="card-term">Microservices</h2>
+          <p class="card-definition">
+            An architectural style where an application is broken into small, independent services that each do one thing well. Instead of one giant app (a monolith), you have many small services that talk to each other over a network — making each one easier to deploy, scale, and understand.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Architecture</span>
+            <span class="card-keyword">Scalability</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="core" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag core">Core Concepts</span>
+          </div>
+          <h2 class="card-term">Infrastructure as Code (IaC)</h2>
+          <p class="card-definition">
+            Managing and provisioning infrastructure (servers, networks, databases) using code and configuration files instead of manual processes. Tools like Terraform let you describe your entire infrastructure in a file, version it in Git, and apply it automatically — just like deploying software.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Terraform</span>
+            <span class="card-keyword">Automation</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="core" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag core">Core Concepts</span>
+          </div>
+          <h2 class="card-term">GitOps</h2>
+          <p class="card-definition">
+            A way of managing infrastructure and deployments where Git is the single source of truth. When you push a change to Git, an automated system detects it and applies the change to your environment. This means every change is tracked, reversible, and peer-reviewed before it ever touches production.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Git</span>
+            <span class="card-keyword">Automation</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="core" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag core">Core Concepts</span>
+          </div>
+          <h2 class="card-term">SRE</h2>
+          <p class="card-definition">
+            Site Reliability Engineering — Google's approach to running large-scale systems reliably. SREs apply software engineering principles to operations problems. They measure reliability with SLOs (Service Level Objectives), manage error budgets, and automate away toil (repetitive manual work).
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Reliability</span>
+            <span class="card-keyword">SLOs</span>
+          </div>
+        </article>
+
+        <!-- Containers -->
+        <article class="term-card" data-category="containers" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag containers">Containers</span>
+          </div>
+          <h2 class="card-term">Container</h2>
+          <p class="card-definition">
+            A lightweight, standalone package that contains everything needed to run a piece of software — the code, runtime, libraries, and settings. Think of it like a shipping container: the same container runs identically on your laptop, a test server, or in production, no matter what the host environment looks like.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Docker</span>
+            <span class="card-keyword">Isolation</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="containers" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag containers">Containers</span>
+          </div>
+          <h2 class="card-term">Docker</h2>
+          <p class="card-definition">
+            The most popular platform for building and running containers. Docker provides tools to package your application into a container image, share it via a registry like Docker Hub, and run it anywhere. A <code>Dockerfile</code> is the recipe that describes how to build your container image.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Dockerfile</span>
+            <span class="card-keyword">Container Runtime</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="containers" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag containers">Containers</span>
+          </div>
+          <h2 class="card-term">Container Registry</h2>
+          <p class="card-definition">
+            A storage and distribution system for container images — like npm for JavaScript packages, but for containers. Docker Hub is the most well-known public registry. Teams also use private registries (like AWS ECR or GitHub Container Registry) to store proprietary images securely.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Docker Hub</span>
+            <span class="card-keyword">Images</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="containers" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag containers">Containers</span>
+          </div>
+          <h2 class="card-term">Service Mesh</h2>
+          <p class="card-definition">
+            A dedicated infrastructure layer that handles communication between microservices. Instead of each service managing its own networking logic (retries, timeouts, encryption, load balancing), a service mesh like Istio or Linkerd handles it all transparently — like a smart network between your services.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Istio</span>
+            <span class="card-keyword">Linkerd</span>
+          </div>
+        </article>
+
+        <!-- Kubernetes -->
+        <article class="term-card" data-category="kubernetes" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag kubernetes">Kubernetes</span>
+          </div>
+          <h2 class="card-term">Kubernetes</h2>
+          <p class="card-definition">
+            An open source system (originally from Google, now CNCF) for automating the deployment, scaling, and management of containerized applications. Often called K8s for short (there are 8 letters between K and s). Think of it as an operating system for your cluster of machines.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">K8s</span>
+            <span class="card-keyword">Orchestration</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="kubernetes" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag kubernetes">Kubernetes</span>
+          </div>
+          <h2 class="card-term">Pod</h2>
+          <p class="card-definition">
+            The smallest deployable unit in Kubernetes. A pod wraps one or more containers that need to work together and share resources. You rarely create pods directly — instead, you create higher-level objects like Deployments that manage pods for you, restarting them if they crash.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Kubernetes</span>
+            <span class="card-keyword">Workload</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="kubernetes" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag kubernetes">Kubernetes</span>
+          </div>
+          <h2 class="card-term">Namespace</h2>
+          <p class="card-definition">
+            A way to divide a Kubernetes cluster into virtual sub-clusters. Teams or projects each get their own namespace, keeping their resources isolated. It's like having separate rooms in a shared office — same building, but your stuff doesn't mix with everyone else's.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Isolation</span>
+            <span class="card-keyword">Multi-tenancy</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="kubernetes" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag kubernetes">Kubernetes</span>
+          </div>
+          <h2 class="card-term">Helm</h2>
+          <p class="card-definition">
+            The package manager for Kubernetes — like apt for Ubuntu or npm for Node.js. Helm packages Kubernetes manifests into reusable "charts" that can be versioned, shared, and deployed with a single command. It handles complex applications that need many Kubernetes resources working together.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Charts</span>
+            <span class="card-keyword">Package Manager</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="kubernetes" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag kubernetes">Kubernetes</span>
+          </div>
+          <h2 class="card-term">Ingress</h2>
+          <p class="card-definition">
+            A Kubernetes resource that manages external access to services inside a cluster — usually HTTP and HTTPS traffic. An Ingress controller (like nginx or Traefik) reads Ingress rules and routes traffic to the right service. Think of it as the cluster's front door and traffic director.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Networking</span>
+            <span class="card-keyword">Routing</span>
+          </div>
+        </article>
+
+        <!-- CI/CD -->
+        <article class="term-card" data-category="cicd" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag cicd">CI/CD</span>
+          </div>
+          <h2 class="card-term">CI/CD</h2>
+          <p class="card-definition">
+            Continuous Integration and Continuous Delivery (or Deployment). CI means automatically building and testing code every time someone pushes a change. CD means automatically deploying that tested code to production (or a staging environment) — so software releases happen frequently and safely, not as rare, stressful events.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Automation</span>
+            <span class="card-keyword">Pipeline</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="cicd" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag cicd">CI/CD</span>
+          </div>
+          <h2 class="card-term">Pipeline</h2>
+          <p class="card-definition">
+            An automated sequence of steps that code travels through from commit to production. A typical pipeline might: build the code, run tests, check for security vulnerabilities, build a container image, push it to a registry, and deploy it. Each step must pass before the next one begins.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Automation</span>
+            <span class="card-keyword">CI/CD</span>
+          </div>
+        </article>
+
+        <!-- Observability -->
+        <article class="term-card" data-category="observability" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag observability">Observability</span>
+          </div>
+          <h2 class="card-term">Observability</h2>
+          <p class="card-definition">
+            The ability to understand what's happening inside your systems from the outside — by looking at the data they produce. Observability has three pillars: <strong>Logs</strong> (timestamped records of events), <strong>Metrics</strong> (numeric measurements over time), and <strong>Traces</strong> (the path a request takes through your system).
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Logs</span>
+            <span class="card-keyword">Metrics</span>
+            <span class="card-keyword">Traces</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="observability" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag observability">Observability</span>
+          </div>
+          <h2 class="card-term">Chaos Engineering</h2>
+          <p class="card-definition">
+            The practice of intentionally breaking things in production to find weaknesses before they cause real outages. Netflix pioneered this with "Chaos Monkey" — a tool that randomly kills servers in production. The idea: if you regularly test failure, your system gets better at handling it.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">Resilience</span>
+            <span class="card-keyword">Netflix</span>
+          </div>
+        </article>
+
+        <article class="term-card" data-category="observability" tabindex="0">
+          <div class="card-header">
+            <span class="card-tag observability">Observability</span>
+          </div>
+          <h2 class="card-term">Serverless</h2>
+          <p class="card-definition">
+            A cloud execution model where you run code without managing servers. You write a function, deploy it, and the cloud provider handles provisioning, scaling, and billing — you only pay for the exact compute used. AWS Lambda, Google Cloud Functions, and Azure Functions are popular examples.
+          </p>
+          <div class="card-footer">
+            <span class="card-keyword">FaaS</span>
+            <span class="card-keyword">Cloud</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Empty state for search -->
+      <div class="empty-state" id="empty-state" hidden>
+        <div class="empty-icon">&#128269;</div>
+        <h3>No terms found</h3>
+        <p>Try a different search term, or <button class="link-btn" id="clear-search">clear the search</button> to see all terms.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2 class="section-title">About This Project</h2>
+        <p>
+          This glossary is an <strong>open source learning lab</strong> — a real project designed to give beginners their first taste of open source contribution. Every term on this page, every color, every card is something <em>you</em> can improve.
+        </p>
+        <p>
+          The project is maintained by <strong>Ayush</strong>. If you're curious about contributing or get stuck at any step, reach out on
+          <a href="https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true" target="_blank" rel="noopener">LinkedIn</a> — there's a real human on the other side who wants to help you succeed.
+        </p>
+        <a href="https://github.com/Ayushmore1214/First_Pr_lab/blob/main/CONTRIBUTING.md" class="btn-primary" target="_blank" rel="noopener">
+          Read the Contributing Guide &#8594;
+        </a>
+      </div>
+      <div class="about-steps">
+        <h3 class="steps-title">How Contributing Works</h3>
+        <ol class="steps-list">
+          <li class="step">
+            <span class="step-num">1</span>
+            <div>
+              <strong>Intro PR</strong>
+              <span>Add your name to CONTRIBUTORS.md. Title: "My First Open Source Contribution"</span>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <div>
+              <strong>Pick a Real Issue</strong>
+              <span>Once your intro PR is merged, grab a <code>good first issue</code> from GitHub Issues.</span>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <div>
+              <strong>Open a PR</strong>
+              <span>Make your change, push it, and open a pull request. We'll review it together.</span>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">4</span>
+            <div>
+              <strong>Get Merged</strong>
+              <span>Your name goes into the project history forever. That's your first open source contribution.</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="logo-icon">&#9729;</span>
+        <span class="footer-name">DevOps Glossary</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-tagline">An open source learning lab by Ayush</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/Ayushmore1214/First_Pr_lab" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Ayushmore1214/First_Pr_lab/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Licensed under MIT &mdash; Built with HTML, CSS &amp; vanilla JS. Zero build step, zero frameworks, zero setup.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

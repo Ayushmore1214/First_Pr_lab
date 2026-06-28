@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Node (if anyone accidentally runs npm install)
+node_modules/
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Build artifacts (none expected — this is a static site)
+dist/
+build/

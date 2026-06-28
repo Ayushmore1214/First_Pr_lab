@@ -1,0 +1,31 @@
+name: DCO Check
+
+# Enforces Developer Certificate of Origin sign-off on all commits.
+# Every commit must include: Signed-off-by: Your Name <your@email.com>
+# Contributors add this with: git commit -s -m "your message"
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  pull-requests: read
+  contents: read
+
+jobs:
+  dco:
+    name: Developer Certificate of Origin
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check DCO sign-off on all commits
+        uses: christophebedard/dco-check@v0.1.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Allow bot commits (GitHub Actions, etc.) to pass without sign-off
+          exclude_users: "github-actions[bot],dependabot[bot]"

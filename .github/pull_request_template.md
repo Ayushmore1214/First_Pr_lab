@@ -45,5 +45,5 @@ Fixes #
 <!-- 
   First time here? Make sure your PR title is exactly:
   "My First Open Source Contribution"
-  (for intro PRs only — for all other PRs, use a descriptive title)
+  (for intro PRs only  -  for all other PRs, use a descriptive title)
 -->

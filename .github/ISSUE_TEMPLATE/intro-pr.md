@@ -9,7 +9,7 @@ assignees: ""
 <!-- 
   Welcome! This template is for your INTRO PR only.
   Your PR title must be exactly: "My First Open Source Contribution"
-  (The title is already pre-filled above — please don't change it!)
+  (The title is already pre-filled above  -  please don't change it!)
 -->
 
 ## What I'm adding

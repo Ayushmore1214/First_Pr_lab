@@ -33,14 +33,14 @@ In `src/styles.css`, find the `:root` block. The variable you want is `--color-p
 
 ## Hint
 
-`#0891b2` (cyan-600) and `#7c3aed` (violet-600) are popular in CNCF-adjacent projects. But feel free to propose something else — just explain your reasoning in the PR!
+`#0891b2` (cyan-600) and `#7c3aed` (violet-600) are popular in CNCF-adjacent projects. But feel free to propose something else  -  just explain your reasoning in the PR!
 ```
 
 ---
 
 ## Issue 2
 
-**Title:** `Fix heading hierarchy — hero title should be h1, not duplicated across sections`
+**Title:** `Fix heading hierarchy  -  hero title should be h1, not duplicated across sections`
 
 **Labels:** `good first issue`, `accessibility`
 
@@ -50,7 +50,7 @@ In `src/styles.css`, find the `:root` block. The variable you want is `--color-p
 
 For screen readers and SEO, a page should have exactly one `<h1>` tag, and headings should follow a logical hierarchy (h1 → h2 → h3, not skipping levels).
 
-Currently in `src/index.html`, the glossary cards use `<h2>` for each term title. This is correct — but it means any section-level headings above them should also be checked.
+Currently in `src/index.html`, the glossary cards use `<h2>` for each term title. This is correct  -  but it means any section-level headings above them should also be checked.
 
 ## Where to look
 
@@ -85,7 +85,7 @@ In Chrome DevTools: Accessibility tab → Full page scan, or use the free Axe De
 ```
 ## What needs to change
 
-Add a new term card to the glossary for **ConfigMap** — a core Kubernetes concept that beginners encounter quickly but rarely have explained to them clearly.
+Add a new term card to the glossary for **ConfigMap**  -  a core Kubernetes concept that beginners encounter quickly but rarely have explained to them clearly.
 
 ## Where to add it
 
@@ -152,7 +152,7 @@ You should see that the footer feels cramped.
 
 ## Notes
 
-Don't change the desktop footer layout — just improve the mobile behavior. Test at both 375px (iPhone 14 Pro) and 390px widths.
+Don't change the desktop footer layout  -  just improve the mobile behavior. Test at both 375px (iPhone 14 Pro) and 390px widths.
 ```
 
 ---
@@ -175,7 +175,7 @@ People reading the glossary often want to paste a definition into their notes, a
 
 ## What a good solution looks like
 
-- A "Copy" icon button appears on card hover (or as a persistent icon — your call)
+- A "Copy" icon button appears on card hover (or as a persistent icon  -  your call)
 - Clicking it copies the term + definition as plain text
 - After clicking, the button briefly changes to "Copied!" (or a checkmark) to confirm
 - It falls back gracefully if the Clipboard API is not available
@@ -186,11 +186,11 @@ People reading the glossary often want to paste a definition into their notes, a
 - The Clipboard API: `navigator.clipboard.writeText(text).then(...)`
 - You can get the term with `card.querySelector('.card-term').textContent`
 - You can get the definition with `card.querySelector('.card-definition').textContent`
-- Style the button in `src/styles.css` — it should be subtle and not distract from the content
+- Style the button in `src/styles.css`  -  it should be subtle and not distract from the content
 
 ## Files to change
 
-- `src/index.html` (possibly — or you can create buttons dynamically in JS)
+- `src/index.html` (possibly  -  or you can create buttons dynamically in JS)
 - `src/main.js` (clipboard logic)
 - `src/styles.css` (button styles)
 ```
@@ -221,20 +221,20 @@ In `src/index.html`, inside the `.search-wrapper` div (or just below the search 
 
 - The hint is visible on desktop but hidden on mobile (where the shortcut is less relevant)
 - It uses a `<kbd>` element for the key name (semantic HTML for keyboard keys)
-- It's styled subtly — small, muted color, not competing with the search input
+- It's styled subtly  -  small, muted color, not competing with the search input
 - On mobile (below 640px viewport), it's hidden via CSS
 - The `<kbd>` element has appropriate styling in `src/styles.css`
 
 ## CSS hint
 
-The `<kbd>` element isn't styled by default in most browsers. Give it a style that makes it look like a keyboard key — small, monospaced font, slight border and shadow.
+The `<kbd>` element isn't styled by default in most browsers. Give it a style that makes it look like a keyboard key  -  small, monospaced font, slight border and shadow.
 ```
 
 ---
 
 ## Issue 7
 
-**Title:** `Improve card hover animation — add a subtle border glow effect`
+**Title:** `Improve card hover animation  -  add a subtle border glow effect`
 
 **Labels:** `good first issue`, `style`
 
@@ -248,7 +248,7 @@ The goal: on hover, the card border should animate to a color that matches the c
 
 ## Where to look
 
-In `src/styles.css`, find `.term-card:hover` — currently it just uses `var(--color-primary)`. 
+In `src/styles.css`, find `.term-card:hover`  -  currently it just uses `var(--color-primary)`. 
 
 ## What a good solution looks like
 
@@ -263,7 +263,7 @@ There are two reasonable approaches:
 
 **Option B (CSS custom property):** Set `--card-accent` dynamically and use it for the hover border.
 
-Either approach is valid — explain your choice in the PR.
+Either approach is valid  -  explain your choice in the PR.
 
 ## Important
 
@@ -301,9 +301,9 @@ The glossary page is long. On mobile especially, scrolling back to the search ba
 
 ## Files to change
 
-- `src/index.html` — add the button element near the bottom of `<body>`
-- `src/styles.css` — positioning, transition, visibility logic
-- `src/main.js` — scroll event listener to toggle visibility
+- `src/index.html`  -  add the button element near the bottom of `<body>`
+- `src/styles.css`  -  positioning, transition, visibility logic
+- `src/main.js`  -  scroll event listener to toggle visibility
 
 ## Code hint
 

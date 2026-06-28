@@ -2,9 +2,9 @@
 
 **Hello! Welcome. I'm genuinely glad you're here.**
 
-This guide is written for people who have never contributed to open source before. Not "beginner-friendly" in the way that documentation sometimes says beginner-friendly and then immediately assumes you know what a pull request is. Actually beginner-friendly — like if you have only ever downloaded an app, this guide will still make sense.
+This guide is written for people who have never contributed to open source before. Not "beginner-friendly" in the way that documentation sometimes says beginner-friendly and then immediately assumes you know what a pull request is. Actually beginner-friendly  -  like if you have only ever downloaded an app, this guide will still make sense.
 
-If you follow every step in this document exactly, you will have made your first open source contribution by the end. If you get stuck at any point — even step one — reach out to Ayush on [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true). That's a real offer from a real human who wants to help you succeed. No question is too small.
+If you follow every step in this document exactly, you will have made your first open source contribution by the end. If you get stuck at any point  -  even step one  -  reach out to Ayush on [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true). That's a real offer from a real human who wants to help you succeed. No question is too small.
 
 Let's go.
 
@@ -38,7 +38,7 @@ Let's go.
 
 ## What is open source?
 
-Open source software is software whose code is publicly available. Anyone can read it, suggest improvements, report problems, or contribute changes. When a project lives on GitHub (like this one), anyone in the world can fork it (make their own copy), make changes, and submit those changes back as a "pull request" — which is a request for the project maintainer to pull your changes into the main codebase.
+Open source software is software whose code is publicly available. Anyone can read it, suggest improvements, report problems, or contribute changes. When a project lives on GitHub (like this one), anyone in the world can fork it (make their own copy), make changes, and submit those changes back as a "pull request"  -  which is a request for the project maintainer to pull your changes into the main codebase.
 
 This project was built specifically so you can experience that full cycle.
 
@@ -46,17 +46,17 @@ This project was built specifically so you can experience that full cycle.
 
 ## What is a fork?
 
-When you "fork" a repository, GitHub creates a personal copy of it under your own GitHub account. This is your sandbox — you can do whatever you want in your fork and it won't affect the original project. When you're done with your changes, you can submit a pull request to propose merging your changes back into the original.
+When you "fork" a repository, GitHub creates a personal copy of it under your own GitHub account. This is your sandbox  -  you can do whatever you want in your fork and it won't affect the original project. When you're done with your changes, you can submit a pull request to propose merging your changes back into the original.
 
-Think of it like photocopying a recipe. You have your own copy, you can write notes on it, modify it — and if you figure out a better version, you can send your improved version back to the original author.
+Think of it like photocopying a recipe. You have your own copy, you can write notes on it, modify it  -  and if you figure out a better version, you can send your improved version back to the original author.
 
 ---
 
 ## What is a branch?
 
-Inside a repository, a "branch" is like a parallel version of the code. The `main` branch is the official, stable version. When you want to make a change, you create a new branch — a copy of main that only exists in your repo. You make all your changes there, without touching main.
+Inside a repository, a "branch" is like a parallel version of the code. The `main` branch is the official, stable version. When you want to make a change, you create a new branch  -  a copy of main that only exists in your repo. You make all your changes there, without touching main.
 
-Think of it like creating a rough draft. You don't write directly in the final document; you write a draft, polish it, and when it's ready, merge it in. If the draft goes badly, you just delete it — main is untouched.
+Think of it like creating a rough draft. You don't write directly in the final document; you write a draft, polish it, and when it's ready, merge it in. If the draft goes badly, you just delete it  -  main is untouched.
 
 ---
 
@@ -76,7 +76,7 @@ You don't have to type this manually every time. Just add `-s` to your commit co
 git commit -s -m "your commit message here"
 ```
 
-Git adds the sign-off line automatically using the name and email from your Git config. That's it. No contracts, no legal paperwork — just a line in a commit.
+Git adds the sign-off line automatically using the name and email from your Git config. That's it. No contracts, no legal paperwork  -  just a line in a commit.
 
 **Why does it exist?** It protects both contributors and the project. It documents that you have the right to contribute your changes. Most serious open source projects use it.
 
@@ -88,7 +88,7 @@ Before you start, make sure you have these three things:
 
 ### 1. A GitHub account
 
-If you don't have one: go to [github.com](https://github.com) and sign up. It's free. Use your real name — that's what gets attributed in the project history.
+If you don't have one: go to [github.com](https://github.com) and sign up. It's free. Use your real name  -  that's what gets attributed in the project history.
 
 ### 2. Git installed on your computer
 
@@ -109,7 +109,7 @@ git --version
 
 ### 3. Configure Git with your name and email
 
-Git needs to know who you are so it can attribute your commits correctly. Run these two commands (replace the values with your actual name and email — use the same email as your GitHub account):
+Git needs to know who you are so it can attribute your commits correctly. Run these two commands (replace the values with your actual name and email  -  use the same email as your GitHub account):
 
 ```bash
 git config --global user.name "Your Full Name"
@@ -137,7 +137,7 @@ This PR must have the exact title: **`My First Open Source Contribution`**
 
 1. Go to [github.com/Ayushmore1214/First_Pr_lab](https://github.com/Ayushmore1214/First_Pr_lab)
 2. Click the **Fork** button in the top-right corner of the page
-3. GitHub will ask you where to create the fork — choose your personal GitHub account
+3. GitHub will ask you where to create the fork  -  choose your personal GitHub account
 4. After a few seconds, you'll be redirected to your fork: `github.com/YOUR-USERNAME/First_Pr_lab`
 
 You now have your own copy of the project. Let's download it to your computer.
@@ -206,7 +206,7 @@ You're now on your new branch. Any changes you make will only affect this branch
 
 ### Step 4: Add your name to CONTRIBUTORS.md
 
-Open the `CONTRIBUTORS.md` file in any text editor — Notepad, VS Code, Sublime Text, whatever you have. Find the Contributors Table and add a new row with your information.
+Open the `CONTRIBUTORS.md` file in any text editor  -  Notepad, VS Code, Sublime Text, whatever you have. Find the Contributors Table and add a new row with your information.
 
 The table looks like this:
 
@@ -225,7 +225,7 @@ Add a new row at the bottom of the table following the same format:
 **Important rules:**
 - Use your real name (first and last)
 - Your GitHub username must link to your actual GitHub profile
-- If you don't have a LinkedIn, write `—` instead of leaving it blank
+- If you don't have a LinkedIn, write ` - ` instead of leaving it blank
 - Don't change any existing rows, only add a new one at the bottom
 
 Save the file.
@@ -301,17 +301,17 @@ If GitHub asks for your username and password, note: GitHub no longer accepts pa
 1. Go to GitHub → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
 2. Click "Generate new token (classic)"
 3. Give it a name, set expiration, check the `repo` scope
-4. Copy the token — it will only be shown once
+4. Copy the token  -  it will only be shown once
 5. Use this token as your "password" when Git asks
 
-Or you can set up SSH authentication — see [GitHub's SSH guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+Or you can set up SSH authentication  -  see [GitHub's SSH guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
 ---
 
 ### Step 7: Open a pull request
 
 1. Go to your fork on GitHub: `github.com/YOUR-USERNAME/First_Pr_lab`
-2. You should see a banner: **"Compare & pull request"** — click it
+2. You should see a banner: **"Compare & pull request"**  -  click it
 3. If you don't see the banner, click **"Pull requests"** → **"New pull request"**
 4. Make sure the base repository is `Ayushmore1214/First_Pr_lab` and the base branch is `main`
 5. Make sure your head repository is your fork and the compare branch is `intro/your-github-username`
@@ -323,7 +323,7 @@ Or you can set up SSH authentication — see [GitHub's SSH guide](https://docs.g
 In the PR body, fill out the template:
 - Check off each checklist item that applies
 - Paste the row you added to CONTRIBUTORS.md
-- Write anything you want in the optional section — how you found the project, how you're feeling, etc. This is the human part.
+- Write anything you want in the optional section  -  how you found the project, how you're feeling, etc. This is the human part.
 
 Click **"Create pull request"**.
 
@@ -334,9 +334,9 @@ Click **"Create pull request"**.
 After you open the PR:
 
 1. **A welcome bot will post a comment** within a minute or two, explaining what comes next
-2. **Automated checks will run** — you'll see green checkmarks (✓) or red X marks next to your commits. Green means all checks passed. If you see a red X, click on it to see what failed
-3. **Ayush will review the PR** — usually within a couple of days. If there are any small issues (formatting, missing sign-off), feedback will come in the PR comments
-4. **Once everything looks good, the PR gets merged** — your name is now permanently in the project's git history
+2. **Automated checks will run**  -  you'll see green checkmarks (✓) or red X marks next to your commits. Green means all checks passed. If you see a red X, click on it to see what failed
+3. **Ayush will review the PR**  -  usually within a couple of days. If there are any small issues (formatting, missing sign-off), feedback will come in the PR comments
+4. **Once everything looks good, the PR gets merged**  -  your name is now permanently in the project's git history
 
 You'll get a GitHub notification when it's merged.
 
@@ -349,7 +349,7 @@ Once your intro PR is merged, you're eligible to work on a real issue.
 ### Finding an issue
 
 1. Go to the [Issues tab](https://github.com/Ayushmore1214/First_Pr_lab/issues)
-2. Look for issues labeled **`good first issue`** — these are real tasks on the webpage that are scoped for beginners
+2. Look for issues labeled **`good first issue`**  -  these are real tasks on the webpage that are scoped for beginners
 3. Read the issue description carefully before claiming it
 
 ### Claiming an issue
@@ -362,7 +362,7 @@ Wait for the maintainer to assign it to you before starting work (this prevents 
 
 ### Working on a webpage issue
 
-Once assigned, the workflow is the same as your intro PR — but now you're editing files in `src/`:
+Once assigned, the workflow is the same as your intro PR  -  but now you're editing files in `src/`:
 
 ```bash
 # Make sure you have the latest main
@@ -377,7 +377,7 @@ git checkout -b fix/short-description-of-what-youre-fixing
 Open `src/index.html` or `src/styles.css` in your editor, make the change, save, and test it in a browser:
 
 ```bash
-# Just open the file in your browser — no server needed!
+# Just open the file in your browser  -  no server needed!
 open src/index.html      # Mac
 start src/index.html     # Windows
 xdg-open src/index.html  # Linux
@@ -397,13 +397,13 @@ Open a pull request with a clear title and fill out the PR template. Reference t
 
 ## Responding to Review Comments
 
-When a reviewer leaves feedback on your PR, don't panic. Review comments are normal — they're not criticism of you as a person, they're a conversation about the code.
+When a reviewer leaves feedback on your PR, don't panic. Review comments are normal  -  they're not criticism of you as a person, they're a conversation about the code.
 
 **How to respond:**
 
 1. Read the comment carefully
 2. If you understand what needs to change, make the edit in your local code, save, commit, and push. The PR will update automatically
-3. If you're not sure what the reviewer means, reply in the comment asking for clarification — this is completely normal and expected
+3. If you're not sure what the reviewer means, reply in the comment asking for clarification  -  this is completely normal and expected
 4. Once you've addressed a comment, reply to it saying what you changed
 
 **After making changes:**
@@ -567,7 +567,7 @@ git checkout -b intro/your-github-username
 git checkout main
 git reset --hard origin/main
 
-# Go back to your branch — changes are there!
+# Go back to your branch  -  changes are there!
 git checkout intro/your-github-username
 ```
 
@@ -597,7 +597,7 @@ git fetch upstream
 git merge upstream/main
 ```
 
-Git will tell you which files have conflicts. Open those files in your editor — you'll see sections like:
+Git will tell you which files have conflicts. Open those files in your editor  -  you'll see sections like:
 
 ```
 <<<<<<< HEAD
@@ -621,9 +621,9 @@ If this feels overwhelming, just ask for help in your PR comments and someone wi
 
 ## Getting Help
 
-**If you get stuck anywhere in this guide — at any step — reach out:**
+**If you get stuck anywhere in this guide  -  at any step  -  reach out:**
 
-- **LinkedIn:** [Ayush More](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true) — best place to get quick help
+- **LinkedIn:** [Ayush More](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true)  -  best place to get quick help
 - **GitHub Issues:** Open an issue with the title "Question: [your question]" and the maintainer will respond
 
 There is no question too basic. If something in this guide was confusing, that's feedback that makes the guide better for everyone who comes after you. Please ask.

@@ -19,13 +19,13 @@ assignees: ""
 ## What would a good solution look like?
 
 <!-- Describe what the finished feature should look/feel/behave like. -->
-<!-- You don't need to know how to implement it — just describe the end state. -->
+<!-- You don't need to know how to implement it  -  just describe the end state. -->
 <!-- Screenshots, mockups, or links to similar examples are very welcome. -->
 
 ## Alternatives you've considered
 
 <!-- Have you thought of other ways to solve this? What are the trade-offs? -->
-<!-- This is optional — skip it if you haven't thought about it. -->
+<!-- This is optional  -  skip it if you haven't thought about it. -->
 
 ## Additional context
 

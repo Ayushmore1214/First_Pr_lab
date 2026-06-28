@@ -9,7 +9,7 @@ assignees: ""
 ## What's broken?
 
 <!-- Describe what you see happening. Be as specific as possible. -->
-<!-- Example: "The search bar doesn't work on Safari — nothing happens when I type." -->
+<!-- Example: "The search bar doesn't work on Safari  -  nothing happens when I type." -->
 
 ## What did you expect to happen?
 

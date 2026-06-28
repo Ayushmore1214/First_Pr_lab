@@ -7,11 +7,11 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 
 ## [Unreleased]
 
-Changes currently in review or planned — nothing yet!
+Changes currently in review or planned  -  nothing yet!
 
 ---
 
-## [1.0.0] — 2024-01-01
+## [1.0.0]  -  2024-01-01
 
 ### Added
 - Initial project launch

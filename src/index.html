@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A community blog for people learning DevOps and cloud native. Guides and posts written by beginners, for beginners." />
-  <title>First PR Lab</title>
+  <meta name="description" content="Plain-English definitions for open source terms - fork, pull request, branch, DCO, and everything else you need to know before your first contribution." />
+  <title>Open Source Glossary - First PR Lab</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,8 +15,8 @@
     <div class="container header-inner">
       <a href="index.html" class="logo">First PR Lab</a>
       <nav class="header-nav">
-        <a href="#guides">Guides</a>
-        <a href="#blog">Blog</a>
+        <a href="#glossary">Terms</a>
+        <a href="https://github.com/Ayushmore1214/First_Pr_lab/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute</a>
         <a href="https://github.com/Ayushmore1214/First_Pr_lab" target="_blank" rel="noopener">GitHub</a>
       </nav>
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">&#9790;</button>
@@ -25,82 +25,325 @@
 
   <section class="hero">
     <div class="container">
-      <h1 class="hero-title">DevOps, explained by people learning it.</h1>
-      <p class="hero-body">
-        A community blog run by <a href="https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true" target="_blank" rel="noopener">Ayush</a>.
-        Every guide and post here was written by someone who just figured something out and wanted to share it —
-        beginners writing for beginners, in plain English.
-      </p>
-      <p class="hero-body">
-        It's also an open source learning lab. If you want to contribute your first ever pull request,
-        <a href="https://github.com/Ayushmore1214/First_Pr_lab/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">here's how it works.</a>
-      </p>
+      <h1 class="hero-title">Open Source Glossary</h1>
+      <p class="hero-sub">Plain-English definitions for the terms you keep seeing before your first contribution. No assumed knowledge.</p>
+      <div class="search-wrap">
+        <input
+          type="search"
+          id="search"
+          class="search-input"
+          placeholder="Search terms... try fork, PR, branch"
+          aria-label="Search glossary"
+          autocomplete="off"
+        />
+        <span class="search-count" id="search-count" aria-live="polite"></span>
+      </div>
     </div>
   </section>
 
+  <div class="filter-bar" id="glossary">
+    <div class="container filter-inner">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="git">Git</button>
+      <button class="filter-btn" data-cat="github">GitHub</button>
+      <button class="filter-btn" data-cat="project">Project</button>
+      <button class="filter-btn" data-cat="process">Process</button>
+    </div>
+  </div>
+
   <main class="container main-content">
+    <div class="card-grid" id="card-grid">
 
-    <section id="guides" class="content-section">
-      <h2 class="section-title">Guides</h2>
+      <!-- Git -->
 
-      <div class="post-list">
+      <article class="card" data-cat="git">
+        <div class="card-top">
+          <span class="card-cat git">Git</span>
+        </div>
+        <h2 class="card-term">Repository</h2>
+        <p class="card-def">
+          The folder where a project lives - including every file and the full history of every change ever made. When you clone one, you download a complete copy to your machine. Often called a "repo."
+        </p>
+        <ul class="card-tags">
+          <li>repo</li>
+          <li>git clone</li>
+          <li>version control</li>
+        </ul>
+      </article>
 
-        <a href="guides/first-open-source-pr.html" class="post-row">
-          <span class="post-category">Getting Started</span>
-          <span class="post-title">How to open your first pull request (and not panic)</span>
-          <span class="post-excerpt">A real walkthrough — forking, cloning, branching, committing. Every command written out. No assumed knowledge.</span>
-          <span class="post-byline">Ayush &nbsp;·&nbsp; 8 min read</span>
-        </a>
+      <article class="card" data-cat="git">
+        <div class="card-top">
+          <span class="card-cat git">Git</span>
+        </div>
+        <h2 class="card-term">Fork</h2>
+        <p class="card-def">
+          Your personal copy of someone else's repository, created on GitHub. You experiment freely in your fork - nothing in the original changes until you open a pull request. Think of it as making a photocopy before you start marking it up.
+        </p>
+        <ul class="card-tags">
+          <li>copy</li>
+          <li>upstream</li>
+          <li>contribute</li>
+        </ul>
+      </article>
 
-        <a href="guides/what-is-a-container.html" class="post-row">
-          <span class="post-category">Containers</span>
-          <span class="post-title">What is a container, actually?</span>
-          <span class="post-excerpt">Not the shipping metaphor. An actual explanation of what Docker does and why it exists, starting from zero.</span>
-          <span class="post-byline">Ayush &nbsp;·&nbsp; 6 min read</span>
-        </a>
+      <article class="card" data-cat="git">
+        <div class="card-top">
+          <span class="card-cat git">Git</span>
+        </div>
+        <h2 class="card-term">Branch</h2>
+        <p class="card-def">
+          An isolated workspace inside a repository. You make changes on a branch so the main codebase stays untouched until your work is reviewed and ready. Every contribution should live on its own branch.
+        </p>
+        <ul class="card-tags">
+          <li>git checkout -b</li>
+          <li>main</li>
+          <li>isolation</li>
+        </ul>
+      </article>
 
-      </div>
+      <article class="card" data-cat="git">
+        <div class="card-top">
+          <span class="card-cat git">Git</span>
+        </div>
+        <h2 class="card-term">Commit</h2>
+        <p class="card-def">
+          A saved snapshot of your changes, stored permanently in the project history. Each commit has a short message describing what changed. Good commit messages explain the why, not just the what.
+        </p>
+        <ul class="card-tags">
+          <li>git commit</li>
+          <li>history</li>
+          <li>sign-off</li>
+        </ul>
+      </article>
 
-      <p class="contribute-invite">
-        Got something to add? Copy <code>src/guides/_template.html</code> and <a href="https://github.com/Ayushmore1214/First_Pr_lab/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">open a PR.</a>
-      </p>
-    </section>
+      <article class="card" data-cat="git">
+        <div class="card-top">
+          <span class="card-cat git">Git</span>
+        </div>
+        <h2 class="card-term">Merge</h2>
+        <p class="card-def">
+          Combining the changes from one branch into another. When a maintainer approves your pull request, they merge your branch into main. Your changes become a permanent part of the project.
+        </p>
+        <ul class="card-tags">
+          <li>git merge</li>
+          <li>main</li>
+          <li>pull request</li>
+        </ul>
+      </article>
 
-    <section id="blog" class="content-section">
-      <h2 class="section-title">Blog</h2>
+      <article class="card" data-cat="git">
+        <div class="card-top">
+          <span class="card-cat git">Git</span>
+        </div>
+        <h2 class="card-term">Clone</h2>
+        <p class="card-def">
+          Downloading a repository from GitHub to your local machine. You clone your fork, not the original repo - that way you have write access. Run <code>git clone &lt;url&gt;</code> to get the files and the full history.
+        </p>
+        <ul class="card-tags">
+          <li>git clone</li>
+          <li>local</li>
+          <li>download</li>
+        </ul>
+      </article>
 
-      <div class="post-list">
+      <!-- GitHub -->
 
-        <a href="blog/what-is-kubernetes.html" class="post-row">
-          <span class="post-category">Kubernetes</span>
-          <span class="post-title">Kubernetes for people who've never heard of it</span>
-          <span class="post-excerpt">I spent three weeks confused about what Kubernetes actually does. Here's the explanation I wish I had from the start.</span>
-          <span class="post-byline">Ayush &nbsp;·&nbsp; 5 min read</span>
-        </a>
+      <article class="card" data-cat="github">
+        <div class="card-top">
+          <span class="card-cat github">GitHub</span>
+        </div>
+        <h2 class="card-term">Pull Request</h2>
+        <p class="card-def">
+          A formal proposal to add your changes to a project. You open a PR, a maintainer reviews it, leaves feedback or approves it, and merges it. This is the core workflow of open source contribution. Often called a PR.
+        </p>
+        <ul class="card-tags">
+          <li>PR</li>
+          <li>review</li>
+          <li>merge</li>
+        </ul>
+      </article>
 
-        <a href="blog/docker-made-simple.html" class="post-row">
-          <span class="post-category">Docker</span>
-          <span class="post-title">Docker made simple: what containers actually are</span>
-          <span class="post-excerpt">Everyone says "it works on my machine." Docker is how we stop saying that. Here's what it actually means.</span>
-          <span class="post-byline">Ayush &nbsp;·&nbsp; 4 min read</span>
-        </a>
+      <article class="card" data-cat="github">
+        <div class="card-top">
+          <span class="card-cat github">GitHub</span>
+        </div>
+        <h2 class="card-term">Issue</h2>
+        <p class="card-def">
+          A tracked conversation on GitHub - a bug report, feature request, question, or task. Issues are how a project organizes its work. You should always look for an issue to claim before starting work on a change.
+        </p>
+        <ul class="card-tags">
+          <li>bug report</li>
+          <li>feature request</li>
+          <li>good first issue</li>
+        </ul>
+      </article>
 
-      </div>
+      <article class="card" data-cat="github">
+        <div class="card-top">
+          <span class="card-cat github">GitHub</span>
+        </div>
+        <h2 class="card-term">Code Review</h2>
+        <p class="card-def">
+          The process of reading someone else's changes and leaving feedback before they're merged. It's collaborative, not critical. Reviewers might ask questions, suggest improvements, or approve the changes as-is.
+        </p>
+        <ul class="card-tags">
+          <li>feedback</li>
+          <li>approve</li>
+          <li>changes requested</li>
+        </ul>
+      </article>
 
-      <p class="contribute-invite">
-        Wrote something lately? Copy <code>src/blog/_template.html</code> and <a href="https://github.com/Ayushmore1214/First_Pr_lab/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">open a PR.</a> No experience needed — that's kind of the point.
-      </p>
-    </section>
+      <article class="card" data-cat="github">
+        <div class="card-top">
+          <span class="card-cat github">GitHub</span>
+        </div>
+        <h2 class="card-term">Upstream</h2>
+        <p class="card-def">
+          The original repository that you forked from. When the original gets new commits, you pull from upstream to bring those changes into your fork and stay in sync. You set this up with <code>git remote add upstream &lt;url&gt;</code>.
+        </p>
+        <ul class="card-tags">
+          <li>git remote</li>
+          <li>sync</li>
+          <li>origin</li>
+        </ul>
+      </article>
+
+      <!-- Project -->
+
+      <article class="card" data-cat="project">
+        <div class="card-top">
+          <span class="card-cat project">Project</span>
+        </div>
+        <h2 class="card-term">Maintainer</h2>
+        <p class="card-def">
+          The person (or team) responsible for a project. They review pull requests, merge changes, close stale issues, and set the direction. When you contribute, you're working with them, not for them.
+        </p>
+        <ul class="card-tags">
+          <li>owner</li>
+          <li>reviewer</li>
+          <li>merge access</li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="project">
+        <div class="card-top">
+          <span class="card-cat project">Project</span>
+        </div>
+        <h2 class="card-term">Contributor</h2>
+        <p class="card-def">
+          Anyone who has added something to a project - code, documentation, a bug report, a typo fix, a translation. You become a contributor the moment your first change is accepted. This project is designed for that exact moment.
+        </p>
+        <ul class="card-tags">
+          <li>first PR</li>
+          <li>CONTRIBUTORS.md</li>
+          <li>open source</li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="project">
+        <div class="card-top">
+          <span class="card-cat project">Project</span>
+        </div>
+        <h2 class="card-term">README</h2>
+        <p class="card-def">
+          The front page of a repository. It's the first thing most people read. A good README explains what the project is, how to run it locally, and how to contribute. Always read it before opening an issue or pull request.
+        </p>
+        <ul class="card-tags">
+          <li>README.md</li>
+          <li>docs</li>
+          <li>markdown</li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="project">
+        <div class="card-top">
+          <span class="card-cat project">Project</span>
+        </div>
+        <h2 class="card-term">License</h2>
+        <p class="card-def">
+          The legal terms for what others can do with the code. MIT means do whatever you want, just keep the copyright notice. GPL means any project using the code must also be open source. Always check the license before using code in a project.
+        </p>
+        <ul class="card-tags">
+          <li>MIT</li>
+          <li>GPL</li>
+          <li>Apache</li>
+        </ul>
+      </article>
+
+      <!-- Process -->
+
+      <article class="card" data-cat="process">
+        <div class="card-top">
+          <span class="card-cat process">Process</span>
+        </div>
+        <h2 class="card-term">DCO</h2>
+        <p class="card-def">
+          Developer Certificate of Origin. A sign-off line at the end of every commit that says you wrote the code and have the right to contribute it. Add it with <code>git commit -s</code> - git appends <code>Signed-off-by: Name &lt;email&gt;</code> automatically.
+        </p>
+        <ul class="card-tags">
+          <li>sign-off</li>
+          <li>git commit -s</li>
+          <li>legal</li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="process">
+        <div class="card-top">
+          <span class="card-cat process">Process</span>
+        </div>
+        <h2 class="card-term">CI/CD</h2>
+        <p class="card-def">
+          Continuous Integration and Delivery. Automated checks that run every time someone pushes code - building it, running tests, checking formatting. If a check fails you'll see a red X on your PR. This project uses CI to validate HTML and enforce DCO sign-offs.
+        </p>
+        <ul class="card-tags">
+          <li>GitHub Actions</li>
+          <li>pipeline</li>
+          <li>automated checks</li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="process">
+        <div class="card-top">
+          <span class="card-cat process">Process</span>
+        </div>
+        <h2 class="card-term">Linting</h2>
+        <p class="card-def">
+          Automated checking of code for style or formatting mistakes - missing tags, inconsistent indentation, deprecated patterns. A linter runs in CI so issues get caught before a human ever has to point them out in review.
+        </p>
+        <ul class="card-tags">
+          <li>HTMLHint</li>
+          <li>code style</li>
+          <li>CI</li>
+        </ul>
+      </article>
+
+      <article class="card" data-cat="process">
+        <div class="card-top">
+          <span class="card-cat process">Process</span>
+        </div>
+        <h2 class="card-term">Open Source</h2>
+        <p class="card-def">
+          Software whose source code is publicly available for anyone to read, use, modify, and contribute to. Most of the tools the world runs on - Linux, Git, Kubernetes, VS Code - are open source. This project was built so you can experience contributing to one.
+        </p>
+        <ul class="card-tags">
+          <li>public</li>
+          <li>community</li>
+          <li>contribute</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <div class="empty-state" id="empty-state" hidden>
+      <p>No terms matched "<span id="empty-query"></span>". Try a shorter word.</p>
+    </div>
 
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>
-        Made by <a href="https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true" target="_blank" rel="noopener">Ayush</a>.
-        If you get stuck contributing, reach out — there's a real person on the other side.
-        <a href="https://github.com/Ayushmore1214/First_Pr_lab" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp; MIT License.
-      </p>
+    <div class="container footer-inner">
+      <p>Built by <a href="https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true" target="_blank" rel="noopener">Ayush</a> as an open source learning lab. MIT License.</p>
+      <p>Stuck contributing? <a href="https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true" target="_blank" rel="noopener">Reach out directly</a> - real human, real help.</p>
     </div>
   </footer>
 

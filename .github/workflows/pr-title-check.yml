@@ -37,7 +37,7 @@ jobs:
                 core.setFailed(
                   `Intro PR title must be exactly: "My First Open Source Contribution"\n` +
                   `You used: "${title}"\n\n` +
-                  `Please edit your PR title to match exactly — capitalization matters!`
+                  `Please edit your PR title to match exactly  -  capitalization matters!`
                 );
               } else {
                 console.log('✓ Intro PR title is correct: "My First Open Source Contribution"');

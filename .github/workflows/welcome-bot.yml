@@ -39,7 +39,7 @@ jobs:
             );
 
             if (previousPRsFromUser.length > 0) {
-              console.log(`${sender} has opened PRs before — skipping welcome message.`);
+              console.log(`${sender} has opened PRs before  -  skipping welcome message.`);
               return;
             }
 
@@ -48,17 +48,17 @@ jobs:
             if (isIntroPR) {
               message = `## Welcome to your first open source contribution, @${sender}! 🎉
 
-Thank you for opening this PR — you just took a step that many people think about but very few actually do.
+Thank you for opening this PR  -  you just took a step that many people think about but very few actually do.
 
 Here's what happens next:
 
-1. **A maintainer will review your PR** — usually within a day or two. We'll make sure your name, GitHub username, and LinkedIn link are formatted correctly in \`CONTRIBUTORS.md\`.
-2. **Your PR gets merged** — once everything looks good, we'll merge it. Your name is now in the git history of a real open source project. Forever.
-3. **You can pick a real issue** — once your intro PR is merged, head to the [Issues tab](https://github.com/${context.repo.owner}/${context.repo.repo}/issues) and look for issues labeled \`good first issue\`. These are real improvements to the project webpage — pick one that interests you and leave a comment saying you'd like to work on it.
+1. **A maintainer will review your PR**  -  usually within a day or two. We'll make sure your name, GitHub username, and LinkedIn link are formatted correctly in \`CONTRIBUTORS.md\`.
+2. **Your PR gets merged**  -  once everything looks good, we'll merge it. Your name is now in the git history of a real open source project. Forever.
+3. **You can pick a real issue**  -  once your intro PR is merged, head to the [Issues tab](https://github.com/${context.repo.owner}/${context.repo.repo}/issues) and look for issues labeled \`good first issue\`. These are real improvements to the project webpage  -  pick one that interests you and leave a comment saying you'd like to work on it.
 
 ---
 
-**If you get stuck at any point**, reach out to Ayush directly on [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true) — there's a real human there who wants to help you succeed. No question is too small.
+**If you get stuck at any point**, reach out to Ayush directly on [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true)  -  there's a real human there who wants to help you succeed. No question is too small.
 
 You've got this. Welcome to open source! 🚀`;
             } else {

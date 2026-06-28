@@ -2,12 +2,12 @@
 
 ## Our Commitment
 
-This project is a learning lab. Its entire reason for existing is to help people take their first steps into open source — which means the bar for how we treat each other is not just "don't be illegal," it's "actively be kind."
+This project is a learning lab. Its entire reason for existing is to help people take their first steps into open source  -  which means the bar for how we treat each other is not just "don't be illegal," it's "actively be kind."
 
 We commit to making this a space where:
 - Beginners are welcome to ask any question without embarrassment
 - Mistakes are treated as learning moments, not failures
-- Every contributor — regardless of experience level, background, or identity — is treated with respect
+- Every contributor  -  regardless of experience level, background, or identity  -  is treated with respect
 
 ---
 
@@ -19,7 +19,7 @@ We commit to making this a space where:
 - Giving constructive, specific feedback instead of vague criticism
 - Acknowledging when you don't know something (we all do)
 - Celebrating other people's wins, including small ones
-- Asking before assuming — context matters
+- Asking before assuming  -  context matters
 
 **Things that are not okay:**
 
@@ -41,7 +41,7 @@ This Code of Conduct applies everywhere project discussions happen: GitHub issue
 
 If you experience or witness behavior that violates this Code of Conduct, please reach out to the maintainer directly:
 
-- **Ayush** — [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true) or via GitHub Issues
+- **Ayush**  -  [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true) or via GitHub Issues
 
 All reports will be reviewed confidentially. Depending on the severity, responses may include a warning, removal of content, or being blocked from the project.
 

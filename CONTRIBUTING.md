@@ -10,6 +10,13 @@ Let's go.
 
 ---
 
+## Other docs worth reading
+
+- [LABELS.md](LABELS.md) - what every label in this project means and when it gets applied
+- [WORKFLOW.md](WORKFLOW.md) - what each automated check does and what to do when one fails
+
+---
+
 ## Table of Contents
 
 1. [What is open source? (30-second version)](#what-is-open-source)
@@ -27,6 +34,9 @@ Let's go.
    - Step 7: Open a pull request
    - Step 8: What happens after you open the PR
 7. [Stage 2: Working on a Real Issue](#stage-2-working-on-a-real-issue)
+   - Finding an issue
+   - How to claim an issue
+   - Working on the change
 8. [Responding to Review Comments](#responding-to-review-comments)
 9. [After Your PR is Merged](#after-your-pr-is-merged)
 10. [Branch Naming Conventions](#branch-naming-conventions)

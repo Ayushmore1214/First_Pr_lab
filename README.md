@@ -1,23 +1,45 @@
 # First PR Lab
 
-A community blog and guides site for people learning DevOps and cloud native  -  written by beginners, for beginners.
+Open source has a vocabulary problem. Everyone says "just open a PR" like that's self-explanatory. You go to the repo, you stare at the Issues tab, nothing makes sense, and you close the tab and never come back.
 
-This is also an open source learning lab. The CI/CD pipeline is real, the review process is real, the git workflow is real. It's just scoped small enough that you can understand the whole codebase in one sitting and make a meaningful contribution without needing six months of experience first.
+This project exists for that moment.
+
+It's an open source glossary of open source terms - fork, pull request, branch, upstream, DCO, all of it. Yes, that's a bit recursive. But you're also here to make your first contribution, so the glossary is not just something you read. It's something you contribute to.
 
 ---
 
-## What's in the site
+## What's in the repo
 
 ```
 src/
-├── index.html         the homepage  -  links to all posts and guides
-├── blog/              personal posts from contributors
-└── guides/            step-by-step explanations of DevOps tools
+  index.html   the glossary - 18 terms across 4 categories
+  styles.css   all the styling
+  main.js      search, filter, dark mode, keyboard shortcuts
+
+.github/
+  workflows/   4 automated checks run on every PR
+
+CONTRIBUTING.md   the full guide - every command, every step
+CONTRIBUTORS.md   everyone who has contributed (your name goes here)
+LABELS.md         what every label in this project means
+WORKFLOW.md       what each automated check does and why
 ```
 
-Each post and guide is a plain HTML file. There's a `_template.html` in both folders  -  you copy it, fill in your content, and open a PR. That's the whole workflow for adding new content.
+No npm. No Docker. No "install these 14 things first." If you can open a file in a browser, you can run this project.
 
-No framework. No build step. No package manager. If you can open a file in a browser, you can run this project.
+---
+
+## Never contributed before?
+
+Good. That's exactly who this is for.
+
+There are two steps, done in order.
+
+**Step 1 - Your intro PR.** Add your name to `CONTRIBUTORS.md`. One file, one table row, one PR titled exactly `My First Open Source Contribution`. This teaches you the full git forking workflow without any pressure.
+
+**Step 2 - Pick a real issue.** Once your intro PR is merged, go to the [Issues tab](https://github.com/Ayushmore1214/First_Pr_lab/issues) and find something labeled `good first issue`. Leave a comment to claim it - the maintainer assigns it to you, and then you start. This is how it works on real projects too.
+
+The entire process, including what git is, what a fork is, what DCO means, and what to do when something breaks, is in [CONTRIBUTING.md](CONTRIBUTING.md). Written for people who have never touched open source before, not "beginner-friendly" in the way that documentation sometimes says beginner-friendly and then immediately assumes you know what a remote is.
 
 ---
 
@@ -27,29 +49,22 @@ No framework. No build step. No package manager. If you can open a file in a bro
 git clone https://github.com/YOUR-USERNAME/First_Pr_lab.git
 cd First_Pr_lab
 
-# Mac
-open src/index.html
-
-# Windows
-start src/index.html
-
-# Linux
-xdg-open src/index.html
+open src/index.html       # Mac
+start src/index.html      # Windows
+xdg-open src/index.html   # Linux
 ```
 
-That's it.
+That's genuinely it. No build step.
 
 ---
 
-## How contributing works
+## How the automated checks work
 
-There are two steps, and you need to do them in order.
+When you open a PR, four checks run automatically. They verify your commit is signed off, your HTML is valid, and your PR title is correctly formatted. If one fails, a red X appears on your PR with a link to see exactly what went wrong.
 
-**Step 1  -  Intro PR.** Add your name, GitHub username, and LinkedIn to `CONTRIBUTORS.md`. The PR title must be exactly `My First Open Source Contribution`. Once it's merged, you're in.
+A red X is not a rejection. It's just a thing to fix. Usually takes 2 minutes.
 
-**Step 2  -  Pick a real issue.** Head to the [Issues tab](https://github.com/Ayushmore1214/First_Pr_lab/issues) and look for anything labeled `good first issue`. These range from writing a new blog post or guide, to fixing a layout bug or improving the mobile experience. Leave a comment saying you want to take it, and start.
-
-The full walkthrough  -  including what git is, what a fork is, every command you need  -  is in [CONTRIBUTING.md](CONTRIBUTING.md). It's written for people who have never touched open source before.
+The full breakdown of each check is in [WORKFLOW.md](WORKFLOW.md). Reading it is optional, but it's also a pretty good intro to GitHub Actions if you're curious how this stuff actually works under the hood.
 
 ---
 
@@ -59,14 +74,14 @@ The full walkthrough  -  including what git is, what a fork is, every command yo
 |------|--------|----------|
 | Ayush More | [@Ayushmore1214](https://github.com/Ayushmore1214) | [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true) |
 
-Your name goes here after your intro PR is merged.
+Your name goes here after your intro PR is merged. There's no minimum experience required. There's no maximum either, but if you've been writing code for ten years and you're here adding your name to a markdown table, that's between you and your journey.
 
 ---
 
 ## Questions
 
-If you get stuck anywhere  -  any git command, any step in the process, anything confusing  -  reach out to Ayush on [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true). That's a real offer, not boilerplate.
+If you get stuck at any step - any command, any error message, anything confusing - reach out to Ayush on [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true). Real person, real responses. The offer is genuine.
 
 ---
 
-MIT License. See [LICENSE](LICENSE).
+MIT License.

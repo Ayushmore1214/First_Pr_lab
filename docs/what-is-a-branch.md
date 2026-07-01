@@ -1,6 +1,6 @@
 # What is a Branch?
 
-A branch is an isolated workspace inside a repository. When you create a branch, you're making a seperate copy of the codebase where you can make changes without touching anything on `main`.
+A branch is an isolated workspace inside a repository. When you create a branch, you're making a separate copy of the codebase where you can make changes without touching anything on `main`.
 
 This is how you work on a feature or fix without disrupting the rest of the project while you're in the middle of it.
 

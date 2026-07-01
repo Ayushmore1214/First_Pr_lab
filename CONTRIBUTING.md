@@ -4,7 +4,7 @@
 
 This guide is written for people who have never contributed to open source before. Not "beginner-friendly" in the way that documentation sometimes says beginner-friendly and then immediately assumes you know what a pull request is. Actually beginner-friendly  -  like if you have only ever downloaded an app, this guide will still make sense.
 
-If you follow every step in this document exactly, you will have made your first open source contribution by the end. If you get stuck at any point  -  even step one  -  reach out to Ayush on [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true). That's a real offer from a real human who wants to help you succeed. No question is too small.
+If you follow every step in this document exactly, you will have made your first open source contribution by the end. If you get stuck at any point  -  even step one  -  post in the [Q&A Discussions](https://github.com/Ayushmore1214/FirstCommit/discussions/categories/q-a) or email Ayush at [ayushmore42595@gmail.com](mailto:ayushmore42595@gmail.com). No question is too small.
 
 Let's go.
 
@@ -432,6 +432,8 @@ The PR will automatically update with your new commits. No need to close and reo
 
 Congratulations! Here's what to do after a merge:
 
+**Share it.** Head to [Discussions - Show and tell](https://github.com/Ayushmore1214/FirstCommit/discussions/28) and drop a comment. Say what you worked on and what you learned. It takes two minutes and it genuinely helps the next person feel like they can do it too.
+
 **Delete your branch** (optional but keeps things clean):
 
 ```bash
@@ -633,10 +635,11 @@ If this feels overwhelming, just ask for help in your PR comments and someone wi
 
 **If you get stuck anywhere in this guide  -  at any step  -  reach out:**
 
-- **LinkedIn:** [Ayush More](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true)  -  best place to get quick help
-- **GitHub Issues:** Open an issue with the title "Question: [your question]" and the maintainer will respond
+- **Discussions Q&A:** [Post your question here](https://github.com/Ayushmore1214/FirstCommit/discussions/categories/q-a)  -  others in the community can help too, not just the maintainer
+- **Email:** [ayushmore42595@gmail.com](mailto:ayushmore42595@gmail.com)  -  for anything you would rather not post publicly
+- **Ideas and suggestions:** Got an idea for a new term or a doc improvement? Post it in [Discussions - Ideas](https://github.com/Ayushmore1214/FirstCommit/discussions/categories/ideas) before opening an issue
 
-There is no question too basic. If something in this guide was confusing, that's feedback that makes the guide better for everyone who comes after you. Please ask.
+There is no question too basic. If something in this guide was confusing, that is feedback that makes the guide better for everyone who comes after you. Please ask.
 
 ---
 

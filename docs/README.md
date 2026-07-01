@@ -13,4 +13,8 @@ Short guides on the concepts behind open source contributing. The [glossary](../
 
 ## Found a typo or unclear sentence?
 
-Check the [Issues tab](https://github.com/Ayushmore1214/First_Pr_lab/issues) - there are open issues for known problems in these docs. Fixing one is a great Stage 2 contribution.
+Check the [Issues tab](https://github.com/Ayushmore1214/FirstCommit/issues) - there are open issues for known problems in these docs. Fixing one is a great Stage 2 contribution.
+
+## Have an idea for a new guide?
+
+Post it in [Discussions - Ideas](https://github.com/Ayushmore1214/FirstCommit/discussions/categories/ideas) before opening an issue. Good ideas get turned into new docs and new issues for contributors to work on.

@@ -131,6 +131,6 @@ And if you want to say thanks in two seconds flat - the star button is right at 
 
 ## Questions
 
-Stuck at any step - reach out to Ayush on [LinkedIn](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true).
+Stuck at any step - email Ayush at [ayushmore42595@gmail.com](mailto:ayushmore42595@gmail.com).
 
 [MIT License](LICENSE).

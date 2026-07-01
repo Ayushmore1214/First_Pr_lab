@@ -91,3 +91,33 @@
   });
 
 }());
+
+// contributor wall
+(function loadContributors() {
+  var wall = document.getElementById('contributors-wall');
+  var section = document.getElementById('contributors-section');
+  if (!wall || !section) return;
+
+  fetch('https://api.github.com/repos/Ayushmore1214/FirstCommit/contributors')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (!Array.isArray(data) || data.length === 0) return;
+      data.forEach(function (c) {
+        var a = document.createElement('a');
+        a.href = c.html_url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.title = c.login;
+        a.className = 'contributor-avatar';
+        var img = document.createElement('img');
+        img.src = c.avatar_url + '&s=92';
+        img.alt = c.login;
+        img.width = 46;
+        img.height = 46;
+        a.appendChild(img);
+        wall.appendChild(a);
+      });
+      section.removeAttribute('hidden');
+    })
+    .catch(function () {});
+}());

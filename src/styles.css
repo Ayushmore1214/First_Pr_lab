@@ -300,6 +300,40 @@ code {
   color: var(--muted);
 }
 
+/* ---- contributors ---- */
+.contributors-section {
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+}
+.contributors-title {
+  font-size: .95rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin-bottom: 4px;
+}
+.contributors-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.contributors-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.contributor-avatar img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: block;
+  transition: border-color .15s, transform .15s;
+}
+.contributor-avatar:hover img {
+  border-color: var(--text);
+  transform: scale(1.08);
+}
+
 /* ---- footer ---- */
 .site-footer {
   border-top: 1px solid var(--border);

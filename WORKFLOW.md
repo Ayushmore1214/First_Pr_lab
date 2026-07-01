@@ -6,7 +6,7 @@ You do not need to set any of this up yourself. It all runs automatically the mo
 
 ---
 
-## The five workflows
+## The six workflows
 
 ### `deploy.yml` - Deploy to GitHub Pages
 
@@ -71,6 +71,16 @@ If multiple commits need it, see the "Common Errors" section in [CONTRIBUTING.md
 **Why it exists:** The first PR experience is confusing. The welcome message reduces that by telling you what to expect, what the next steps are, and where to ask for help. It also makes the project feel like there is a human on the other side, because there is.
 
 **Nothing to do here.** It just runs.
+
+---
+
+### `thank-contributor.yml` - Thank Contributor on Merge
+
+**What it does:** When an intro PR (titled exactly "My First Open Source Contribution") is merged, this workflow automatically posts a comment on the PR congratulating the contributor, confirming their change is live, and telling them exactly what to do next - pick an issue, claim it, open a PR.
+
+**Why it exists:** The moment your first PR merges is the most meaningful part of the whole experience, and right now it ends with a silent GitHub notification. This makes that moment feel like something. It also removes the "what do I do now?" confusion by giving immediate next steps right where the contributor is already looking.
+
+**Nothing to do here.** It fires automatically on every merged intro PR.
 
 ---
 

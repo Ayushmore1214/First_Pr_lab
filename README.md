@@ -1,4 +1,4 @@
-<h1 align="center">First PR Lab</h1>
+<h1 align="center">FirstCommit</h1>
 
 <p align="center">
   The companion lab for <strong>Open Source 101 - Episode 2</strong><br/>
@@ -35,11 +35,11 @@
 
 If you just came from the Open Source 101 video - you're in the right place.
 
-This is the lab Ayush mentioned in Episode 2. The whole video is about opening your first PR in an open source project, and this repo is where you actually do it. Not a tutorial. Not a walkthrough. The real thing, scoped small enough that you can finish it today.
+**FirstCommit** is the lab Ayush mentioned in Episode 2. The whole video is about opening your first PR in an open source project, and this is where you actually do it. Not a tutorial. Not a walkthrough. The real thing, scoped small enough that you can finish it today.
 
-Everyone says "just open a PR" like that sentence means something to someone who has never done it. You go to a repo, stare at the Issues tab, nothing makes sense, and you close the tab. Sound familiar? This project was built for exactly that moment.
+Everyone says "just open a PR" like that sentence means something to someone who has never done it. You go to a repo, stare at the Issues tab, nothing makes sense, and you close the tab. Sound familiar? FirstCommit was built for exactly that moment.
 
-It's an open source glossary of open source terms. Yes, that's recursive. You'll understand the joke by the time you finish your first PR.
+It's an open source glossary of open source terms. Yes, that's recursive. You'll understand the joke by the time you make your first commit.
 
 ---
 
@@ -106,7 +106,7 @@ The complete guide - what is git, what is a fork, every command, what to do when
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/First_Pr_lab.git
-cd First_Pr_lab
+cd FirstCommit
 
 open src/index.html       # Mac
 start src/index.html      # Windows

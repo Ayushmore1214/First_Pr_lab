@@ -168,7 +168,7 @@ Replace `YOUR-USERNAME` with your actual GitHub username.
 
 **Expected output:**
 ```
-Cloning into 'First_Pr_lab'...
+Cloning into 'FirstCommit'...
 remote: Enumerating objects: 42, done.
 remote: Counting objects: 100% (42/42), done.
 remote: Compressing objects: 100% (28/28), done.
@@ -178,10 +178,10 @@ Receiving objects: 100% (42/42), done.
 Now change into the project directory:
 
 ```bash
-cd First_Pr_lab
+cd FirstCommit
 ```
 
-**Expected output:** Your terminal prompt changes to show you're inside the `First_Pr_lab` folder. No output is fine too.
+**Expected output:** Your terminal prompt changes to show you're inside the `FirstCommit` folder. No output is fine too.
 
 Let's verify everything looks right by listing the files:
 
@@ -320,10 +320,10 @@ Or you can set up SSH authentication  -  see [GitHub's SSH guide](https://docs.g
 
 ### Step 7: Open a pull request
 
-1. Go to your fork on GitHub: `github.com/YOUR-USERNAME/First_Pr_lab`
+1. Go to your fork on GitHub: `github.com/YOUR-USERNAME/FirstCommit`
 2. You should see a banner: **"Compare & pull request"**  -  click it
 3. If you don't see the banner, click **"Pull requests"** → **"New pull request"**
-4. Make sure the base repository is `Ayushmore1214/First_Pr_lab` and the base branch is `main`
+4. Make sure the base repository is `Ayushmore1214/FirstCommit` and the base branch is `main`
 5. Make sure your head repository is your fork and the compare branch is `intro/your-github-username`
 
 **The PR title must be exactly:** `My First Open Source Contribution`

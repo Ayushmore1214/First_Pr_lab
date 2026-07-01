@@ -128,7 +128,7 @@ Your name goes here after your intro PR is merged. No minimum experience. No max
 
 If this helped you land your first contribution, share it on LinkedIn and tag [Ayush](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true). Every post helps the next person find the video and the lab.
 
-And if you want to say thanks in two seconds flat - the star button is right at the top.
+And if you want to say thanks in two seconds flat - hit the ⭐ star button at the top of the page.
 
 ## Questions and discussions
 
@@ -137,5 +137,7 @@ Got stuck? Have an idea? Just merged your first PR and want to share it?
 Head to [Discussions](https://github.com/Ayushmore1214/FirstCommit/discussions) - ask in Q&A, share in Show and tell, or drop an idea in Ideas. The community is there.
 
 For anything private, email Ayush at [ayushmore42595@gmail.com](mailto:ayushmore42595@gmail.com).
+
+Made with ❤️ by [Ayush More](https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true)
 
 [MIT License](LICENSE).

@@ -6,18 +6,18 @@
 </p>
 
 <p align="center">
-  <a href="https://ayushmore1214.github.io/First_Pr_lab/">Live Site</a> &nbsp;·&nbsp;
-  <a href="https://github.com/Ayushmore1214/First_Pr_lab/issues">Issues</a> &nbsp;·&nbsp;
+  <a href="https://ayushmore1214.github.io/FirstCommit/">Live Site</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Ayushmore1214/FirstCommit/issues">Issues</a> &nbsp;·&nbsp;
   <a href="CONTRIBUTING.md">How to Contribute</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/ayush-more-3b4154341/?skipRedirect=true">Ayush on LinkedIn</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Ayushmore1214/First_Pr_lab/actions/workflows/deploy.yml"><img src="https://github.com/Ayushmore1214/First_Pr_lab/actions/workflows/deploy.yml/badge.svg" alt="Deploy" /></a>
-  <a href="https://github.com/Ayushmore1214/First_Pr_lab/issues"><img src="https://img.shields.io/github/issues/Ayushmore1214/First_Pr_lab" alt="Open Issues" /></a>
-  <a href="https://github.com/Ayushmore1214/First_Pr_lab/pulls"><img src="https://img.shields.io/github/issues-pr/Ayushmore1214/First_Pr_lab" alt="Open PRs" /></a>
-  <a href="https://github.com/Ayushmore1214/First_Pr_lab/graphs/contributors"><img src="https://img.shields.io/github/contributors/Ayushmore1214/First_Pr_lab" alt="Contributors" /></a>
-  <a href="https://github.com/Ayushmore1214/First_Pr_lab/stargazers"><img src="https://img.shields.io/github/stars/Ayushmore1214/First_Pr_lab" alt="Stars" /></a>
+  <a href="https://github.com/Ayushmore1214/FirstCommit/actions/workflows/deploy.yml"><img src="https://github.com/Ayushmore1214/FirstCommit/actions/workflows/deploy.yml/badge.svg" alt="Deploy" /></a>
+  <a href="https://github.com/Ayushmore1214/FirstCommit/issues"><img src="https://img.shields.io/github/issues/Ayushmore1214/FirstCommit" alt="Open Issues" /></a>
+  <a href="https://github.com/Ayushmore1214/FirstCommit/pulls"><img src="https://img.shields.io/github/issues-pr/Ayushmore1214/FirstCommit" alt="Open PRs" /></a>
+  <a href="https://github.com/Ayushmore1214/FirstCommit/graphs/contributors"><img src="https://img.shields.io/github/contributors/Ayushmore1214/FirstCommit" alt="Contributors" /></a>
+  <a href="https://github.com/Ayushmore1214/FirstCommit/stargazers"><img src="https://img.shields.io/github/stars/Ayushmore1214/FirstCommit" alt="Stars" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
   <img src="https://img.shields.io/badge/Hacktoberfest-friendly-orange" alt="Hacktoberfest friendly" />
 </p>
@@ -47,7 +47,7 @@ It's an open source glossary of open source terms. Yes, that's recursive. You'll
 
 A glossary of 18 open source terms - fork, pull request, branch, upstream, DCO, maintainer, CI/CD, and more - built as a live website that you contribute to. The terms are the exact vocabulary you need to navigate the CNCF ecosystem: Kubernetes, Prometheus, any cloud native project. This is where it starts.
 
-The site is live at [ayushmore1214.github.io/First_Pr_lab](https://ayushmore1214.github.io/First_Pr_lab/). When your PR gets merged, your change ships there automatically. Real URL. Real deploy pipeline. Something you can actually point to.
+The site is live at [ayushmore1214.github.io/FirstCommit](https://ayushmore1214.github.io/FirstCommit/). When your PR gets merged, your change ships there automatically. Real URL. Real deploy pipeline. Something you can actually point to.
 
 ## Who is this for?
 
@@ -98,14 +98,14 @@ Two steps. In order.
 
 **Step 1 - Intro PR.** Add your name to `CONTRIBUTORS.md`. PR title must be exactly `My First Open Source Contribution`. Takes about 20 minutes including setup. Teaches you forking, cloning, branching, committing with a DCO sign-off, pushing, and opening a PR - the full workflow.
 
-**Step 2 - Pick a real issue.** Once your intro PR is merged, go to the [Issues tab](https://github.com/Ayushmore1214/First_Pr_lab/issues) and find something labeled `good first issue`. Leave a comment to claim it. The maintainer assigns it within 24 hours. You fix it. It ships live.
+**Step 2 - Pick a real issue.** Once your intro PR is merged, go to the [Issues tab](https://github.com/Ayushmore1214/FirstCommit/issues) and find something labeled `good first issue`. Leave a comment to claim it. The maintainer assigns it within 24 hours. You fix it. It ships live.
 
 The complete guide - what is git, what is a fork, every command, what to do when something breaks - is in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Running it locally
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/First_Pr_lab.git
+git clone https://github.com/YOUR-USERNAME/FirstCommit.git
 cd FirstCommit
 
 open src/index.html       # Mac
